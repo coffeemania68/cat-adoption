@@ -190,6 +190,52 @@
     </p>
 </div>
 
+<!-- 구분선 -->
+    <div style="border-top: 1px solid #deb887; margin: 2rem 0;"></div>
+
+    <!-- 노래하는 강아지 섹션 -->
+    <h2 style="text-align: center; color: #8b4513; margin-bottom: 1.5rem;">
+        🎵 노래하는 반려동물 영상 🎵
+    </h2>
+    
+    <div class="grid-container">
+        <!-- 동영상 1 -->
+        <div class="card" style="background: #e6e6fa;">
+            <div class="instagram-container">
+                <iframe class="instagram-video"
+                    src="https://www.instagram.com/reel/DEYFBGJTgm2/embed"
+                    frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+            </div>
+        </div>
+
+        <!-- 동영상 2 -->
+        <div class="card" style="background: #e0ffff;">
+            <div class="instagram-container">
+                <iframe class="instagram-video"
+                    src="https://www.instagram.com/reel/DEb5PexPXGo/embed"
+                    frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+            </div>
+        </div>
+
+        <!-- 동영상 3 -->
+        <div class="card" style="background: #fff0f5;">
+            <div class="instagram-container">
+                <iframe class="instagram-video"
+                    src="https://www.instagram.com/reel/DEOoiuPvqAY/embed"
+                    frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- 동영상 관련 링크 -->
+    <div style="text-align: center; margin-top: 1rem;">
+        <a href="https://mypawstory.com/%eb%85%b8%eb%9e%98%ed%95%98%eb%8a%94-%ea%b0%95%ec%95%84%ec%a7%80-%eb%8f%99%ec%98%81%ec%83%89/" 
+           class="site-link" 
+           style="font-size: 0.9rem;">
+            🎬 나도 이런 영상 만들어보기 →
+        </a>
+    </div>
+         
                 <!-- 푸터 -->
         <footer style="margin-top: 2rem; text-align: center; border-top: 1px solid #deb887; padding-top: 2rem;">
             <div class="card" style="background: #ffefd5; max-width: 600px; margin: 0 auto;">
@@ -220,5 +266,28 @@
             </div>
         </footer>
     </div>
+        <style>
+.instagram-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 125%;
+    margin: 0.5rem 0;
+}
+
+.instagram-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
 </body>
 </html>
