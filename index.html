@@ -7,7 +7,7 @@
 
     <style>
         body {
-            background-color: #f5e6d3; /* 연한 베이지 배경 */
+            background-color: #f5e6d3;
             min-height: 100vh;
             padding: 1rem;
             margin: 0;
@@ -27,18 +27,17 @@
             transform: translateY(-2px);
         }
 
-        /* 각 카드별 파스텔 배경색 */
         .card:nth-child(1) {
-            background: #ffe4e1; /* 미스티 로즈 */
+            background: #ffe4e1;
         }
         .card:nth-child(2) {
-            background: #e0ffff; /* 연한 시안 */
+            background: #e0ffff;
         }
         .card:nth-child(3) {
-            background: #f0fff0; /* 연한 허니듀 */
+            background: #f0fff0;
         }
         .card:nth-child(4) {
-            background: #fff0f5; /* 라벤더 블러쉬 */
+            background: #fff0f5;
         }
 
         .site-link {
@@ -79,7 +78,7 @@
             margin: 0 auto;
             position: relative;
             padding: 1rem;
-            background-color: #fff5ee; /* 컨텐츠 배경색 */
+            background-color: #fff5ee;
             border-radius: 2rem;
             box-shadow: 0 0 20px rgba(0,0,0,0.05);
         }
@@ -100,6 +99,52 @@
             text-align: center;
         }
 
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1rem;
+            margin: 2rem auto;
+            max-width: 800px;
+        }
+
+        .video-item {
+            aspect-ratio: 1/1;
+            background: #e0ffff;
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+
+        .contact-info {
+            font-size: 0.875rem;
+            color: #6b4423;
+            margin-top: 2rem;
+            padding: 1rem;
+            background: #fff5f5;
+            border-radius: 0.5rem;
+        }
+
+        .contact-info h3 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-info p {
+            margin: 0.25rem 0;
+        }
+
+        .instagram-media {
+            margin: 0 !important;
+            padding: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            max-width: none !important;
+            min-width: 0 !important;
+            background: transparent !important;
+            border: none !important;
+            border-radius: 0.5rem !important;
+            box-shadow: none !important;
+        }
+
         @media (max-width: 768px) {
             .title {
                 font-size: 1.5rem;
@@ -117,11 +162,20 @@
                 padding: 0.5rem;
                 border-radius: 1rem;
             }
+
+            .video-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
         }
     </style>
 </head>
 <body>
-    <!-- 떠다니는 이모지 -->
     <div class="floating-emoji" style="left: 10%;">🐱</div>
     <div class="floating-emoji" style="left: 30%; animation-delay: 2s;">😺</div>
     <div class="floating-emoji" style="left: 50%; animation-delay: 4s;">😸</div>
@@ -129,16 +183,13 @@
     <div class="floating-emoji" style="left: 90%; animation-delay: 8s;">😻</div>
 
     <div class="content-wrapper">
-        <!-- 메인 컨텐츠 -->
         <h1 class="title">❤️ 무료 고양이 분양 ❤️</h1>
 
         <p class="subtitle">
             신뢰할 수 있는 고양이 분양 사이트들을 한눈에 확인하세요
         </p>
 
-        <!-- 사이트 목록 -->
         <div class="grid-container">
-            <!-- 사이트 1 -->
             <div class="card">
                 <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; color: #8b4513;">
                     🐱 캣조아닷컴
@@ -151,7 +202,6 @@
                 </p>
             </div>
 
-            <!-- 사이트 2 -->
             <div class="card">
                 <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; color: #8b4513;">
                     🐱 우리펫
@@ -164,7 +214,6 @@
                 </p>
             </div>
 
-            <!-- 사이트 3 -->
             <div class="card">
                 <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; color: #8b4513;">
                     🐱 주세요닷컴
@@ -177,98 +226,62 @@
                 </p>
             </div>
 
-            <!-- 사이트 4 -->
-<div class="card" style="background: #ffffa0;">  <!-- 배경색만 변경 -->
-    <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; color: #8b4513;">
-        🐱 도그마루
-    </h3>
-    <a href="https://dmanimal.co.kr/" class="site-link">
-        사이트 방문하기 →
-    </a>
-    <p style="color: #6b4423; margin-top: 0.5rem;">
-        강아지와 고양이 모두를 위한 종합 분양 플랫폼입니다.
-    </p>
-</div>
+            <div class="card" style="background: #ffffa0;">
+                <h3 style="font-size: 1.25rem; font-weight: 600; margin-bottom: 0.5rem; color: #8b4513;">
+                    🐱 도그마루
+                </h3>
+                <a href="https://dmanimal.co.kr/" class="site-link">
+                    사이트 방문하기 →
+                </a>
+                <p style="color: #6b4423; margin-top: 0.5rem;">
+                    강아지와 고양이 모두를 위한 종합 분양 플랫폼입니다.
+                </p>
+            </div>
+        </div>
 
-  <!-- 푸터 -->
-<footer style="margin-top: 2rem; text-align: center; border-top: 1px solid #deb887; padding-top: 2rem; background-color: #fff5f5;">
-    <!-- 광고 제휴 문의 -->
-    <div class="card" style="background: #fff5f5; max-width: 600px; margin: 0 auto 2rem auto; padding: 1rem;">
-        <p style="font-size: 1.25rem; font-weight: 600; color: #8b4513; margin-bottom: 1rem;">
-            📢 광고 및 제휴 문의
-        </p>
-        <p style="color: #6b4423; margin-bottom: 1rem;">
-            반려동물 분양 관련 광고와 제휴를 원하시는 업체는 아래 이메일로 연락 주시기 바랍니다.
-        </p>
-        <div style="color: #6b4423; padding: 0.5rem; background: #fff; border-radius: 0.5rem; display: inline-block;">
-            ✉️ petsmoa2000@gmail.com
-        </div>
-        <!-- 영상 만들기 링크를 여기로 이동 -->
-        <div style="margin-top: 1rem;">
-            <a href="https://mypawstory.com/%eb%85%b8%eb%9e%98%ed%95%98%eb%8a%94-%ea%b0%95%ec%95%84%ec%a7%80-%eb%8f%99%ec%98%81%ec%83%81/" style="color: #6b4423; text-decoration: none;">
-                🎬 나도 이런 영상 만들어보기 →
-            </a>
-        </div>
+        <footer style="margin-top: 2rem; text-align: center; border-top: 1px solid #deb887; padding-top: 2rem; background-color: #fff5f5;">
+            <!-- 동영상 만들기 링크 -->
+            <div style="margin-bottom: 2rem;">
+                <a href="https://mypawstory.com/%eb%85%b8%eb%9e%98%ed%95%98%eb%8a%94-%ea%b0%95%ec%95%84%ec%a7%80-%eb%8f%99%ec%98%81%ec%83%81/" style="color: #6b4423; text-decoration: none;">
+                    🎬 나도 이런 영상 만들어보기 →
+                </a>
+            </div>
+
+            <!-- 동영상 그리드 -->
+            <div class="video-grid">
+                <div class="video-item">
+                    <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DEb5PexPXGo/">
+                    </blockquote>
+                </div>
+                <div class="video-item">
+                    <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DEYFBGJTgm2/">
+                    </blockquote>
+                </div>
+                <div class="video-item">
+                    <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DEOoiuPvqAY/">
+                    </blockquote>
+                </div>
+                <div class="video-item">
+                    <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DEOoiuPvqAY/">
+                    </blockquote>
+                </div>
+            </div>
+
+            <!-- 저작권 -->
+            <div style="margin-top: 2rem; font-size: 0.75rem; color: #8b4513;">
+                <p>© 2024 My Paw Story. All rights reserved.</p>
+            </div>
+
+            <!-- 광고 제휴 문의 - 작은 글씨로 맨 아래에 배치 -->
+            <div class="contact-info">
+                <h3>📢 광고 및 제휴 문의</h3>
+                <p>반려동물 분양 관련 광고와 제휴를 원하시는 업체는 아래 이메일로 연락 주시기 바랍니다.</p>
+                <p>✉️ petsmoa2000@gmail.com</p>
+            </div>
+        </footer>
     </div>
 
-    <!-- 동영상 컨테이너 -->
-    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem; margin-bottom: 2rem; max-width: 800px; margin-left: auto; margin-right: auto;">
-        <!-- 동영상 1 -->
-        <div style="aspect-ratio: 1/1; background: #e0ffff; border-radius: 0.5rem; overflow: hidden;">
-            <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DEb5PexPXGo/" style="width:100%; height:100%; min-width:100%;">
-            </blockquote>
-        </div>
-        <!-- 동영상 2 -->
-        <div style="aspect-ratio: 1/1; background: #e0ffff; border-radius: 0.5rem; overflow: hidden;">
-            <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DEYFBGJTgm2/" style="width:100%; height:100%; min-width:100%;">
-            </blockquote>
-        </div>
-        <!-- 동영상 3 -->
-        <div style="aspect-ratio: 1/1; background: #e0ffff; border-radius: 0.5rem; overflow: hidden;">
-            <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DEOoiuPvqAY/" style="width:100%; height:100%; min-width:100%;">
-            </blockquote>
-        </div>
-        <!-- 동영상 4 -->
-        <div style="aspect-ratio: 1/1; background: #e0ffff; border-radius: 0.5rem; overflow: hidden;">
-            <blockquote class="instagram-media" data-instgrm-captioned data-instgrm-permalink="https://www.instagram.com/reel/DEOoiuPvqAY/" style="width:100%; height:100%; min-width:100%;">
-            </blockquote>
-        </div>
-    </div>
-
-    <!-- 저작권 -->
-    <div style="margin-top: 2rem; font-size: 0.75rem; color: #8b4513;">
-        <p>© 2024 My Paw Story. All rights reserved.</p>
-    </div>
-</footer>
-
-<!-- Instagram 임베드 스크립트 -->
-<script async src="//www.instagram.com/embed.js"></script>
-
-<style>
-.instagram-media {
-    margin: 0 !important;
-    padding: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    max-width: none !important;
-    min-width: 0 !important;
-    background: transparent !important;
-    border: none !important;
-    border-radius: 0.5rem !important;
-    box-shadow: none !important;
-}
-
-@media (max-width: 768px) {
-    [style*="display: grid"] {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 480px) {
-    [style*="display: grid"] {
-        grid-template-columns: 1fr;
-    }
-}
-</style>
+    <!-- Instagram 임베드 스크립트 -->
+    <script async src="//www.instagram.com/embed.js"></script>
 </body>
 </html>
