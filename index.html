@@ -191,39 +191,34 @@
 </div>
 
           <!-- 푸터 -->
-<footer style="margin-top: 2rem; text-align: center; border-top: 1px solid #deb887; padding-top: 2rem;">
+<footer style="margin-top: 2rem; text-align: center; border-top: 1px solid #deb887; padding-top: 2rem; background-color: #fff5f5;">
     <!-- 광고 제휴 문의 -->
-    <div class="card" style="background: #ffefd5; max-width: 600px; margin: 0 auto 2rem auto;">
+    <div class="card" style="background: #fff5f5; max-width: 600px; margin: 0 auto 2rem auto; padding: 1rem;">
         <p style="font-size: 1.25rem; font-weight: 600; color: #8b4513; margin-bottom: 1rem;">
             📢 광고 및 제휴 문의
         </p>
         <p style="color: #6b4423; margin-bottom: 1rem;">
             반려동물 분양 관련 광고와 제휴를 원하시는 업체는 아래 이메일로 연락 주시기 바랍니다.
         </p>
-        <a href="mailto:petsmoa2000@gmail.com" 
-           class="site-link" 
-           style="background: #fff; padding: 0.5rem 1rem; border-radius: 0.5rem;">
+        <div style="color: #6b4423; padding: 0.5rem; background: #fff; border-radius: 0.5rem; display: inline-block;">
             ✉️ petsmoa2000@gmail.com
-        </a>
+        </div>
     </div>
 
-    <!-- 노래하는 강아지 영상 섹션 -->
-    <div style="max-width: 1200px; margin: 0 auto;">
+    <!-- 노래하는 반려동물 섹션 -->
+    <div style="margin: 1rem auto;">
         <p style="font-size: 1.1rem; font-weight: 600; color: #8b4513; margin-bottom: 1rem;">
             🎵 반려동물 노래 부르기 영상
         </p>
         
-        <!-- 동영상 그리드 컨테이너 -->
         <div class="grid-container">
-            <!-- 동영상 1 -->
-            <div class="video-card" style="background: #e6e6fa;">
+            <div class="video-card" style="background: #ffe4e1;">
                 <blockquote class="instagram-media" data-instgrm-captioned 
                     data-instgrm-permalink="https://www.instagram.com/reel/DEb5PexPXGo/"
                     style="width:100%; height:100%; min-width:100%;">
                 </blockquote>
             </div>
 
-            <!-- 동영상 2 -->
             <div class="video-card" style="background: #e0ffff;">
                 <blockquote class="instagram-media" data-instgrm-captioned 
                     data-instgrm-permalink="https://www.instagram.com/reel/DEYFBGJTgm2/"
@@ -231,8 +226,7 @@
                 </blockquote>
             </div>
 
-            <!-- 동영상 3 -->
-            <div class="video-card" style="background: #fff0f5;">
+            <div class="video-card" style="background: #f0fff0;">
                 <blockquote class="instagram-media" data-instgrm-captioned 
                     data-instgrm-permalink="https://www.instagram.com/reel/DEOoiuPvqAY/"
                     style="width:100%; height:100%; min-width:100%;">
@@ -240,23 +234,19 @@
             </div>
         </div>
 
-        <!-- 영상 만들기 링크 -->
         <div style="margin: 1rem 0;">
             <a href="https://mypawstory.com/%eb%85%b8%eb%9e%98%ed%95%98%eb%8a%94-%ea%b0%95%ec%95%84%ec%a7%80-%eb%8f%99%ec%98%81%ec%83%81/" 
-               class="site-link" 
-               style="font-size: 0.9rem; display: inline-block;">
+               style="color: #6b4423; text-decoration: none; font-size: 0.9rem;">
                 🎬 나도 이런 영상 만들어보기 →
             </a>
         </div>
     </div>
 
-    <!-- 저작권 -->
     <div style="margin-top: 2rem; font-size: 0.75rem; color: #8b4513;">
         <p>© 2024 My Paw Story. All rights reserved.</p>
     </div>
 </footer>
 
-<!-- Instagram 임베드 스크립트 -->
 <script async src="//www.instagram.com/embed.js"></script>
 
 <style>
@@ -265,6 +255,8 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     padding: 1rem;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .video-card {
@@ -272,11 +264,7 @@
     aspect-ratio: 1/1;
     overflow: hidden;
     border-radius: 0.5rem;
-    transition: transform 0.3s ease;
-}
-
-.video-card:hover {
-    transform: translateY(-2px);
+    padding: 1rem;
 }
 
 .instagram-media {
@@ -290,19 +278,6 @@
     border: none !important;
     border-radius: 0.5rem !important;
     box-shadow: none !important;
-}
-
-.site-link {
-    color: #d2691e;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.25rem;
-    font-weight: 500;
-}
-
-.site-link:hover {
-    color: #8b4513;
 }
 
 @media (max-width: 768px) {
